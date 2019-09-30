@@ -47,42 +47,16 @@
     </license>
   </licenses>
 
-  <distributionManagement>
-    <site>
-      <id>beanstalker.ingenieux.com.br</id>
-      <name>ingenieux Beanstalker Site</name>
-      <url>s3://beanstalker.ingenieux.com.br</url>
-    </site>
-  </distributionManagement>
-
-  <mailingLists>
-    <mailingList>
-      <name>beanstalker-users</name>
-      <archive>http://groups.google.com/group/beanstalker-users</archive>
-    </mailingList>
-    <mailingList>
-      <name>beanstalker-dev</name>
-      <archive>http://groups.google.com/group/beanstalker-dev</archive>
-    </mailingList>
-  </mailingLists>
-
-  <organization>
-    <name>ingenieux</name>
-    <url>http://ingenieux.com.br</url>
-  </organization>
-
-  <developers>
-    <developer>
-      <id>aldrinleal</id>
-      <name>Aldrin Leal</name>
-      <timezone>-3</timezone>
-    </developer>
-  </developers>
-
-  <issueManagement>
-    <system>github</system>
-    <url>https://github.com/ingenieux/beanstalker/issues</url>
-  </issueManagement>
+	<distributionManagement>
+		<snapshotRepository>
+			<id>asset.repo.sfamc.snapshot</id>
+			<url>s3://asset.repo.sfamc/snapshot</url>
+		</snapshotRepository>
+		<repository>
+			<id>asset.repo.sfamc.release</id>
+			<url>s3://asset.repo.sfamc/release</url>
+		</repository>
+	</distributionManagement>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -93,13 +67,11 @@
     <jackson.version>2.10.0.pr3</jackson.version>
   </properties>
 
-  <scm>
-    <connection>scm:git:git@github.com:ingenieux/beanstalker.git</connection>
-    <developerConnection>scm:git:git@github.com:ingenieux/beanstalker.git
-    </developerConnection>
-    <url>scm:git:git@github.com:ingenieux/beanstalker.git</url>
-  </scm>
-
+	<scm>
+		<connection>scm:git:https://github.com/edwinquaihoi/beanstalker.git</connection>
+		<developerConnection>scm:git:https://github.com/edwinquaihoi/beanstalker.git</developerConnection>
+	</scm>
+	
   <modules>
     <module>beanstalker-common</module>
     <module>beanstalk-maven-plugin</module>
