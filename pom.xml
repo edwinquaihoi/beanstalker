@@ -194,7 +194,7 @@
         <version>${jackson.version}</version>
       </dependency>
       <dependency>
-        <groupId>br.com.ingenieux</groupId>
+        <groupId>au.com.sfamc.fusion</groupId>
         <artifactId>beanstalker-common</artifactId>
         <version>${project.version}</version>
       </dependency>
@@ -336,7 +336,7 @@
           <version>3.8.2</version>
         </plugin>
         <plugin>
-          <groupId>br.com.ingenieux</groupId>
+          <groupId>au.com.sfamc.fusion</groupId>
           <artifactId>beanstalk-maven-plugin</artifactId>
           <version>${project.version}</version>
         </plugin>
